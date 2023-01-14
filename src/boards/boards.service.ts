@@ -27,7 +27,7 @@ export class BoardsService {
         description: description,
         status: BoardStatus.PUBLIC,
         user: {
-          connect: user,
+          connect: { id: user.id },
         },
       },
     });
